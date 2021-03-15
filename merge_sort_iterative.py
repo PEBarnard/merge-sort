@@ -63,7 +63,7 @@ def main():
     start = time.time_ns()
     arr = [random.randint(1, 1000000) for a in range(5000)]
     ms = MergeSort()
-    # print(ms.sort(arr))
+    print(ms.sort(arr))
     print(f"Running time = {(time.time_ns() - start)/1000000000} seconds")
 
 if __name__ == '__main__':
