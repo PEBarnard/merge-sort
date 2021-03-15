@@ -5,6 +5,9 @@
 
 import random
 import time
+import sys
+
+sys.setrecursionlimit(10**9)
 
 class MergeSort:
     def sort(self, arr):
@@ -37,7 +40,7 @@ class MergeSort:
             
 def main():
     start = time.time_ns()
-    arr = [random.randint(1, 300000) for a in range(500)]
+    arr = [random.randint(1, 1000000) for a in range(5000)]
     ms = MergeSort()
     print(ms.sort(arr))
     print(f"Running time = {(time.time_ns() - start)/1000000000} seconds")
